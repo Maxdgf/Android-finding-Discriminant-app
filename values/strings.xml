@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Draft</string>
+    <string name="discriminant">Discriminant</string>
+    <string name="hint1">enter a</string>
+    <string name="hint2">enter b</string>
+    <string name="hint3">enter c</string>
+    <string name="answer">D equals:</string>
+    <string name="btn_text">solve</string>
+    <string name="data">Discriminant data:</string>
+    <string name="copyres">copy result</string>
+    <string name="Next">next solve</string>
+</resources>
