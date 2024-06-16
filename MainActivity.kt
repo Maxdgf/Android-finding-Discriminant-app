@@ -1,5 +1,4 @@
-package com.example.discriminantfindingapp
-
+package com.example.draft
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
