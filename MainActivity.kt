@@ -1,7 +1,9 @@
 package com.example.draft
+
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +18,7 @@ lateinit var input1: EditText
 lateinit var input2: EditText
 lateinit var input3: EditText
 lateinit var btn_copy: Button
+lateinit var btnNext: Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         input2 = findViewById(R.id.input_b)
         input3 = findViewById(R.id.input_c)
         btn_copy = findViewById(R.id.copytoclipboard)
+        btnNext = findViewById(R.id.btn_next)
 
         fun discriminant(): Int {
             val input1 = input1.text.toString()
@@ -91,6 +95,11 @@ class MainActivity : AppCompatActivity() {
             val clipData = ClipData.newPlainText("text", text)
             clipboardManager.setPrimaryClip(clipData)
 
+        }
+
+        btnNext.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
         }
 
 
