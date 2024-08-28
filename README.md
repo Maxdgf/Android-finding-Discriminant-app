@@ -1,5 +1,5 @@
 # Android-finding-Discriminant-app
-Андроид приложение на kotlin с помощью которого можно находить дискриминант.Приложение имеет 3 экрана. Сторонние библиотеки не загружены
+An Android application on kotlin with which you can find a discriminant.The application has 3 screens. Third-party libraries are not loaded
 
 
 ![](screen1.jpg)
